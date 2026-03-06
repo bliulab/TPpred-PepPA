@@ -1,5 +1,5 @@
-# TPpred-LE
-The implementation of the paper ***TPpred-LE: Therapeutic peptide functions prediction based on label embedding***
+# TPpred-PepPA
+The implementation of the paper ***Peptide Language Pragmatic Analysis and Two-stage Hierarchical Learning framework for Therapeutic Peptide Prediction PLPTP: A Motif-based Interpretable Deep Learning Framework Based on Protein Language Models for Peptide Toxicity Prediction***
 
 ## Requirements
 The majoy dependencies used in this project are as following:
@@ -18,16 +18,12 @@ transformers  4.25.1
 More detailed python libraries used in this project are referred to `requirements.txt`. 
 
 # Usage
-+ Generate the pssms by blast against NR database(https://ftp.ncbi.nlm.nih.gov/blast/db/). The features of the benchmark data are avilable at (http://bliulab.net/TPpred-LE/data/).
++ Generate the pssms by blast against NR database(https://ftp.ncbi.nlm.nih.gov/blast/db/). The features of the benchmark data are avilable at (http://bliulab.net/TPpred-PepPA/data/).
 + Create the `features`,  `logs`, `results` directory in current path. 
 + copy the `pssm` into features. It should be `/features/pssm/xxx.pssm`. 
 + train and test the model:
-Train the model(*Algorithm 1*):
+Train the model:
 ```shell
 ./train.sh
 ```
-Retrain the model(*Algorithm 2*):
-```shell
-./retrain.sh
-```
-The `(re)train_partial.sh` is used to train with the limited datasets.
+
